@@ -127,7 +127,7 @@ def crypto_cmp(FileName, options=0):
 			
 				
 				temp['crypto_evidence'][findings]['hits'][hit_nbr]["max_similarity"] = max_smlt
-				temp['crypto_evidence'][findings]['hits'][hit_nbr]["lib_index"] = lib_index
+				temp['crypto_evidence'][findings]['hits'][hit_nbr]["max_lib_index"] = lib_index
 				temp['crypto_evidence'][findings]['hits'][hit_nbr]["max_content"] = max_content
 
 				max_smlt = 0
