@@ -4,7 +4,9 @@ MAINTAINER jongkil@uow.edu.au
 RUN	mkdir /src && \
         mkdir /app && \
         cd /app && \
-        git clone https://github.com/seungickjang/crypto-cmp.git
+        git clone https://github.com/seungickjang/crypto-cmp.git && \
+        cd /app/crypto-cmp && \
+        unzip dbs.zip
 
 WORKDIR /app/crypto-cmp
 
