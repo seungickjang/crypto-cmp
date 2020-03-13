@@ -1,0 +1,5 @@
+*.py[cod]
+__pycache__/
+
+src.crypto
+src_crypto.json
