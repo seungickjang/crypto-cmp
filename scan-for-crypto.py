@@ -57,7 +57,7 @@ def Check_with(db_name, matched_text, sentence, options = 0):
 					contents = contents + hits_index['line_text_after_1']
 					contents = contents + hits_index['line_text_after_2']
 					contents = contents + hits_index['line_text_after_3']
-					removeSpecialChars = contents.translate ({ord(c): " " for c in "!@#$%^&*()[]{};:,./<>?\|`~-=_+\n\t"})
+					removeSpecialChars = contents.translate ({ord(c): " " for c in "!@#$%^&*()[]{};:,./<>?\|`~-=_+\'\"\n\t"})
 					index = jaccard_smlt(sentence.split(" "),removeSpecialChars.split(" "))
 					if (max_index < index):
 						max_index = index
